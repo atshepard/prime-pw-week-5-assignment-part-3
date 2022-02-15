@@ -1,12 +1,27 @@
 console.log('***** Music Collection *****')
 let collection = [];
 function addToCollection(title, artist, yearPublished) {
-  let title = {
-    title: title;
-    artist: artist;
-    yearPublished: yearPublished;
+  let newAlbum = {
+    title: title,
+    artist: artist,
+    yearPublished: yearPublished,
   }
-  collection.push(title)
+  collection.push(newAlbum);
+  return newAlbum;
 }
-console.log(addToCollection('September', 'Earth, Wind & Fire', '1978'))
+console.log(addToCollection('September', 'Earth, Wind & Fire', '1978'));
+console.log(addToCollection('El Camino', 'The Black Keys', '2011'));
+console.log(addToCollection('Magic Potion', 'The Black Keys', '2006'));
+console.log(addToCollection('Brothers', 'The Black Keys', '2010'));
+console.log(addToCollection('Discovery', 'Daft Punk', '2001'));
+console.log(addToCollection('Paul Simon', 'Paul Simon', '1972'));
 console.log(collection);
+
+function showCollection(array) {
+  console.log(array.length);
+  for (let album of array) {
+    console.log(`${newAlbum.title} by ${newAlbum.artist}, published in ${newAlbum.yearPublished}.`);
+  }
+}
+
+showCollection(collection);
