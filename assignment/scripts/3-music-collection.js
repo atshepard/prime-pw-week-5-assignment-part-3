@@ -55,8 +55,8 @@ function search(input) {
         searchResults.push(collection[i]);
       } else if (input === "" || !input) {
         return collection;
-      }
-  }
+          }
+        }
   return searchResults;
 }
 
