@@ -1,10 +1,24 @@
 console.log('***** Music Collection *****')
+
+// let collection = [];
+// function addToCollection(title, artist, yearPublished) {
+//   let newAlbum = {
+//     title: title,
+//     artist: artist,
+//     yearPublished: yearPublished
+//   }
+//   collection.push(newAlbum);
+//   return newAlbum;
+// }
+
 let collection = [];
-function addToCollection(title, artist, yearPublished) {
+function addToCollection(title, artist, yearPublished, tracks) {
   let newAlbum = {
     title: title,
     artist: artist,
     yearPublished: yearPublished,
+    //tracks: [{trackName: trackName, trackDuration: trackDuration}] -> gives 'trackname not defined'
+    tracks: 
   }
   collection.push(newAlbum);
   return newAlbum;
